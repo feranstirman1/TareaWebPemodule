@@ -27,22 +27,31 @@
     </header>
 
     <div id="pagina-principal">
+
+        <div class="overlay-negro"></div>
+
         <div name="inicio">
             <!--primer bloque-->
 
             <div name="startup">
-                <img src="img/logo.png" alt="logo Pemodule">
-                <i class="fas fa-bars"></i>
-                <p>YOUR BEST PARTNER</p>
-                <h1>Pemodule</h1>
-                <button class="btn-common">Get Started →</button>
+                <div><img src="img/logo.png" alt="logo Pemodule" style="align-self:flex-start;"></div>
+                <div><i class="fas fa-bars"></i></div>
+                <div>
+                    <p>YOUR BEST PARTNER</p>
+                    <h1>Pemodule</h1>
+                    <button class="btn-common">Get Started →</button>
+                </div>
+                <div class="overlay-morado-rosado"></div>
+
+
+
             </div>
 
             <div name="introduccion">
                 <!--segundo bloque-->
                 <div><img src="img/slider.jpg" alt="foto de la montaña"></div>
                 <div>
-                    <h2>Reasons to <b>Choose</b> Notebook</h2>
+                    <h2>Reasons to <br> <b>Choose</b> Notebook</h2>
                     <p>Here, I focus on a range of items and features that we use in life without giving them a second
                         thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -56,7 +65,7 @@
                 <!--tercer bloque-->
 
                 <div>
-                    <h2>Reasons to <b>Choose</b> Notebook</h2>
+                    <h2>Reasons to <br> <b>Choose</b> Notebook</h2>
                     <p>Here, I focus on a range of items and features that we use in life without giving them a second
                         thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -70,33 +79,29 @@
 
             <div name="contenido">
                 <!--cuarto bloque-->
-                <div>
-                    <div>
-                        <img src="img/s1.jpg" alt="niña1">
+                <div class="s1">
+                    <div class="overlay-morado-rosado">
                         <h3>BECOMING A DVD REPAIR EXPERT ONLINE</h3>
                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam.</P>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img src="img/s2.jpg" alt="arcgipielago">
+                <div class="s2">
+                    <div class="overlay-morado-rosado">
                         <h3>BECOMING A DVD REPAIR EXPERT ONLINE</h3>
                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam.</P>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img src="img/s3.jpg" alt="flores">
+                <div class="s3">
+                    <div class="overlay-morado-rosado">
                         <h3>BECOMING A DVD REPAIR EXPERT ONLINE</h3>
                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam.</P>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img src="img/s4.jpg" alt="amigas">
+                <div class="s4">
+                    <div class="overlay-morado-rosado">
                         <h3>BECOMING A DVD REPAIR EXPERT ONLINE</h3>
                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam.</P>
@@ -106,20 +111,34 @@
 
             <div name="formulario">
                 <!--quinto bloque-->
-                <form action="submit">
+                <div id="form-div">
                     <h2>Send us <b>Message</b></h2>
                     <p>Most people who work in an office environment, buy computer products.</p>
-                    <!--falta el resto del formulario-->
-                    <button>Send Message →</button>
-                </form>
+                    <form action="submit">
+
+                        <div class="grid-form">
+                            <input type="text" placeholder="Enter your Name">
+                            <input type="email" placeholder="Enter email adress">
+                            <textarea name="" id="ta-form" cols="30" rows="10" placeholder="Message"></textarea>
+                            <div><button id="btn-form">Send Message →</button></div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="overlay-morado-rosado">
+
+                </div>
             </div>
 
-            <div name="subscripcion">
+            <div name="subscribe">
                 <!--sexto bloque-->
                 <h2>Subscribe for our <b>Newsletter</b></h2>
                 <form action="send">
-                    <!--falta lo del formulario-->
-                    <button>Get Started →</button>
+                    <div id="input-subscribe">
+                        <input type="email">
+                        <button>Get Started →</button>
+                    </div>
+
                 </form>
                 <p>We dont send any types of spam.Guaranteed.</p>
             </div>
@@ -135,15 +154,20 @@
 
                 <div>
                     <!--iconos-->
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-globe"></i>
+                    <i class="fab fa-behance"></i>
                 </div>
 
                 <div>
-                    <p>Copyright ©2018 All rights reserved | This template is made with by Colorlib</p>
+                    <p>Copyright ©2018 All rights reserved | This template is made with <i class="far fa-heart"></i> by
+                        <span>Colorlib</span> </p>
                 </div>
 
             </footer>
         </div>
-
+    </div>
 
 
 </body>
