@@ -372,7 +372,28 @@ div[name="formulario"] h2,div[name="formulario"] p{
 }
 
 #form-div{
+    position: relative;
     z-index: 1;
+}
+
+#form-div h2{
+    font-size: 3em;
+    margin-bottom: 0;
+}
+#form-div p{
+    margin-top: 0;
+}
+
+#btn-form{
+    background-color: white;
+    font-size: 1em;
+    font-weight: 100;
+    border: 1px solid transparent;
+}
+#btn-form:hover{
+    background-image: linear-gradient(to right,#3927b2,#b65adb);
+    color: white;
+    cursor: pointer;
 }
 
 ::placeholder{
