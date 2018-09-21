@@ -1,0 +1,196 @@
+/*
+############################################
+configuraciones preliminares 
+###########################################
+*/
+:root{
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #4b379a;
+}
+header{
+    background: black;
+    border-bottom: 1px solid #77cc6d;
+}
+header button{
+    font-weight: bold;
+}
+#pagina-principal{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+
+/*
+***************************************************
+agregando imagenes a las divisiones
+***************************************************
+*/
+#pagina-principal{
+    background-image: url(img/parallux-bg.jpg);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*
+########################################
+modificando los display de los elementos 
+#######################################
+*/
+/*en la cabecera */
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5em;
+}
+header>div{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+header>div.boton-listas{
+    justify-content: flex-start;
+}
+
+
+
+/*##########################################
+Dandole estilos a los botones del encabezado 
+############################################
+*/
+.btn-common{
+    border: none;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 3px;
+}
+.btn-listas{
+    background-color: #111;
+    color: white;
+}
+.btn-descargar{
+    background-color: #5c4185;
+    color: white;
+}
+.btn-cerrar{
+    background-color: #3b3b3b;
+    color: white;
+}
+.btn-twitter-share{
+    background-color: #00aced;
+    color: white;
+}
+.btn-fb-share{
+    background-color: #3b5998;
+    color: white;
+}
+/*efecto hover*/
+.btn-common:hover{
+    cursor: pointer;
+}
+/*dandole margenes a los iconos y botones de fb y twitter*/
+div>button:nth-child(3){
+    margin-right: 0;
+}
+div>button:nth-child(4){
+    margin-left: 0;
+}
+.btn-common>i{
+    margin: 0.5em;
+}
+
+/*
+****************************************************
+estilo de el primer bloque (introduccion)
+****************************************************
+*/
+/*imagen de fondo*/
+div[name="startup"]{
+    background-image: url(img/header-bg.jpg);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 30em;
+}
+div[name="startup"]>*{
+    color: white;
+}
+div[name="startup"] h1{
+    font-weight: 100;
+}
+div[name="startup"] button{
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+
+
+/*
+********************************************************
+estilo de el segundo bloque
+**********************************************************
+*/
+div[name="introduccion"]{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+div[name="introduccion"] div:nth-child(1){
+    grid-column: 2/3;
+}
+div[name=introduccion]{
+    background-color: white;
+    height: 50em;
+    margin-top: 0;
+}
+div[name=introduccion] button{
+    size: 3em;
+    background-image: linear-gradient(to right,#3927b2,#b65adb);
+    border-radius: 25px;
+    color: white;
+    padding:15px;
+    justify-self: flex-start;
+}
+div[name="introduccion"]>div{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/*
+**********************************
+estilo tercer bloque
+**********************************
+*/
+div[name="introduccion2"]{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+div[name="introduccion2"] div{
+    grid-column: 2/3;
+}
+
+/*
+**************************************************************
+estilo cuarto bloque
+**************************************************************
+*/
+div[name=contenido]{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
